@@ -2,7 +2,6 @@
 
 ## Data Documentation for State wise orders placed 
 
-`jaffle_shop` is a fictional ecommerce store.
 
 This [dbt](https://www.getdbt.com/) project is for demonstrations and tutorials.
 
