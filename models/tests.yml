@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: state_order_count
+      description: "A state wise order count"
+      columns:
+          - name: STATE_NAME
+            description: "The stae name for this table"
+            tests:
+                - unique
+                - not_null
