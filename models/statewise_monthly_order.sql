@@ -7,3 +7,4 @@ select S.STATE_NAME,MonthName(o.order_purchase_timestamp) as Month,C.customer_or
 )
 
 select * from statewise_monthly_order
+--
