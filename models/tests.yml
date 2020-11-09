@@ -1,7 +1,7 @@
 version: 2
 
 models:
-    - name: model_2
+    - name: statewise_order_count
       description: "A state wise order count"
       columns:
           - name: STATE_NAME
@@ -9,3 +9,7 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: monthwise_order_perc
+      description: "This model calculates percentages of orders placed in each month in each state"
+               
