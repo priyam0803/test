@@ -8,5 +8,5 @@ From
 
 select * from monthwise_order_perc
 --
--- today is tuesday
+
 
