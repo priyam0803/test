@@ -9,3 +9,4 @@ select S.STATE_NAME,C.customer_order_id
 select * From statewise_order
 --
 --dbt demo
+---tredence dbt demo
