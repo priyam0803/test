@@ -35,5 +35,5 @@ models:
   customer_analysis:
       # Applies to all files under models/example/
       #example:
-          materialized: view
+          materialized: table
           +transient: false
