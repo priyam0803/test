@@ -7,6 +7,5 @@ From
 )
 
 select * from monthwise_order_perc
---
 
 
