@@ -1,0 +1,18 @@
+version: 2
+
+models:
+    - name: statewise_order_count
+      description: "A state wise order count"
+      columns:
+          - name: STATE_NAME
+            description: "The state name for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: monthwise_order_perc
+      description: "This model calculates percentages of orders placed in each month in each state"
+      columns:
+          - name: MONTHLY_ORDER_PERCENTAGE
+            tests:
+                - monthly_order_perc_threshold
