@@ -1,7 +1,9 @@
 version: 2
 
 sources:
-  - name: PUBLIC
+  - name: source_test
+    database: DBT_INTEGRATION
+    schema: public
     tables:
       - name: state
       - name: customer
