@@ -15,4 +15,6 @@ models:
       columns:
           - name: MONTHLY_ORDER_PERCENTAGE
             tests:
-                - monthly_order_perc_threshold
+                - not_null
+                - perc_check('monthwise_order_perc','MONTHLY_ORDER_PERCENTAGE')
+                
