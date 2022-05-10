@@ -12,8 +12,8 @@ vars:
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
-on-run-start: "insert into DBT_INTEGRATION.PUBLIC.package_audit_tb(run_status,run_end_time,package_name,invocation_id) values('started',null,'customer','{{invocation_id}}');commit;"
-on-run-end: "update DBT_INTEGRATION.PUBLIC.package_audit_tb set run_status='completed',run_end_time=current_timestamp
+on-run-start: "insert into package_audit_tb(run_status,run_end_time,package_name,invocation_id) values('started',null,'customer','{{invocation_id}}');commit;"
+on-run-end: "update package_audit_tb set run_status='completed',run_end_time=current_timestamp
             where  package_name = 'customer' and  run_status='started';commit;"
 
 # These configurations specify where dbt should look for different types of files.
@@ -49,4 +49,9 @@ models:
       #example:
           materialized: view
           +transient: false
+#         schema: staging
+ #         schema: core
+
+#seeds:
+#    schema: core
           
