@@ -1,3 +1,5 @@
+
+
 select S.STATE_NAME,C.customer_order_id,'{{ invocation_id}}' as invocation_id
   from {{ source('source_test','customer')}} C
   JOIN {{ source('source_test','state')}} S ON c.customer_st=S.ST_CD
