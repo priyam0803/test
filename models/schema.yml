@@ -11,10 +11,11 @@ models:
                 - not_null
 
     - name: monthwise_order_perc
-      description: "This model calculates percentages of orders placed in each month in each state"
+      description: '{{ doc("order_perc")}}'
       columns:
           - name: MONTHLY_ORDER_PERCENTAGE
             tests:
                 - not_null
-                - perc_check('monthwise_order_perc','MONTHLY_ORDER_PERCENTAGE')
+                - dbt_utils.not_constant
+                - perc_check
                 

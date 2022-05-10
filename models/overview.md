@@ -2,10 +2,15 @@
 
 ## Data Documentation 
 
-This [dbt](https://www.getdbt.com/) project is for demonstrations and tutorials.
+ This [dbt](https://www.getdbt.com/) project is for demonstrations and tutorials.
 
-The source code can be found [here](https://github.com/priyam0803/test.git).
+ The source code can be found [here](https://github.com/priyam0803/test.git).
 
-This project shows the state wise orders placed 
+ This project shows the state wise orders placed 
 
+{% enddocs %}
+
+
+{% docs order_perc %}
+"This model calculates percentages of orders placed in each month in each state"
 {% enddocs %}
